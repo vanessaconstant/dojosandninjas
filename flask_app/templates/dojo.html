@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <title>Dojos</title>
+</head>
+
+<body>
+    <div class="dojo-page">
+
+
+        <div>
+
+            <form class="form dojo-form" action="/processtwo" method="post">
+                <h2 class="heading">New Dojo</h2>
+
+                {% with messages = get_flashed_messages() %}
+                <!-- declare a variable called messages -->
+                {% if messages %}
+                <!-- check if there are any messages -->
+                {% for message in messages %}
+                <!-- loop through the messages -->
+                <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                <label for="dojo-name">Name:</label>
+                <input type="text" id="dojo-name" name="name">
+                <input type="submit" id="submit-btn" value="Add Dojo">
+
+            </form>
+        </div>
+
+        <div class="dojo-list">
+            <h2 class="heading">All Dojos</h2>
+
+            <ul>
+                {%for dojo in all_dojos%}
+                <li><a href="/dojos/{{dojo.id}}">{{dojo.name}}</a></li>
+
+                {%endfor%}
+            </ul>
+
+        </div>
+
+    </div>
+
+    <a href="/ninjas" class="link dojo_link">Add Ninja</a>
+</body>
+
+</html>

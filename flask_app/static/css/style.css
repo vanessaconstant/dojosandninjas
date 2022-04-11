@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.heading{
+    color: rgb(45, 112, 246);
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form{
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    
+    
+}
+
+.form label{
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+
+.form input {
+
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: none;
+}
+
+#submit-btn{
+    font-size: 16px;
+    background-color: rgb(45, 112, 246);
+    margin-top: 8px;
+    width: 100px;
+    padding: 10px 5px;
+
+}
+
+#submit-btn:hover, #submit-btn:active{
+    background-color: #444;
+    color: #fff;
+}
+
+.link{
+    display: block;
+    color: rgb(45, 112, 246);
+
+}
+
+
+/* Styles for Dojo Page */
+.dojo-page{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.dojo-form{
+    width: 350px;
+}
+
+.dojo-list{
+    background-color: #444;
+    width: 350px;
+    padding: 10px 30px;
+}
+
+.dojo-list ul{
+
+    list-style-type: none;
+}
+.dojo-list ul li{
+
+    text-align: center;
+    color: goldenrod;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.dojo-list ul li a{
+    color: goldenrod;
+    text-decoration: none;
+
+}
+
+.dojo-list ul li a:active, .dojo-list ul li a:hover{
+    text-decoration: underline;
+}
+
+.dojo_link{
+
+    margin: 30px 130px ;
+
+}
+
+
+
+/* Styles for Ninja Page */
+
+.ninja-form{
+    width: 400px;
+    margin: 40px auto;
+}
+
+.form select{
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    
+    
+
+}
+
+.ninja_link{
+    text-align: center;
+}
+
+
+/* Styles for Dojo and Ninja Page */
+
+.heading-djnj{
+    text-align: left;
+}
+
+table {
+    background-color: lightblue;
+    width: 1000px;
+    border-collapse: collapse;
+
+}
+
+
+
+table th {
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 3px solid rgb(72, 181, 217);
+    
+}
+
+table td{
+
+    padding: 10px 15px;
+    
+}
+
+.dojoninja_link{
+
+    margin-top: 30px;
+}
